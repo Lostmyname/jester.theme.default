@@ -1,0 +1,41 @@
+//column-rule-style;
+$color-bg-green:            #01b69b !default;
+$color-bg-blue:             #00aced !default;
+$color-bg-brown:            #664628 !default;
+$color-bg-red:              #ff4a00 !default;
+$color-bg-salmon:           #ff6666 !default;
+$color-bg-orange:           #ff5510 !default;
+$color-bg-pink:             #eb008a !default;
+$color-bg-yellow:           #ffce35 !default;
+$color-bg-green-dark:       #01b69b !default;
+$color-bg-green-light:      #8ac53e !default;
+$color-bg-blue-dark:        #24408e !default;
+$color-bg-gray:             #c5c2b7 !default;
+$color-bg-gray-dark:        #333333 !default;
+$color-bg-gray-brown:       #d8d4c7 !default;
+$color-bg-gray-light:       #f6f5f1 !default;
+$color-bg-gray-blue:        #333c4c !default;
+
+// Semantic colours
+$color-bg-primary:          $color-bg-green !default;
+$color-bg-secondary:        $color-bg-blue !default;
+$color-bg-alert:            $color-bg-red !default;
+$color-bg-neutral:          $color-bg-gray-brown !default;
+
+// Text colours
+$color-text:                #333333 !default;
+$color-text-light:          #999999 !default;
+$color-text-disabled:       #666666 !default;
+$color-text-link:           $color-bg-green !default;
+$color-text-menu:           #616266 !default;
+
+// Semantic text colours
+$color-text-primary:        $color-bg-primary !default;
+$color-text-secondary:      $color-bg-secondary !default;
+$color-text-alert:          $color-bg-alert !default;
+
+// Branc colours
+$color-facebook:            #3b5998 !default;
+$color-twitter:             #55acee !default;
+$color-google:              #dd4b39 !default;
+
