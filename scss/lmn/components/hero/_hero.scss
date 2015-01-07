@@ -1,0 +1,14 @@
+
+.hero-voucher {
+  background: url(../images/voucher/herobg-large.gif) center center;
+  @include responsiveBg("../images/voucher/herobg", "gif", "auto");
+}
+
+.hero-success {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: #f6f5f1;
+
+  @include responsiveBg("../images/hero/hero-bg", "jpg", "1260px 450px");
+}
