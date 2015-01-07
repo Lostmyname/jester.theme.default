@@ -1,10 +1,11 @@
 .divider-thin {
+  background-color: transparent;
   background-image: url(../images/dividers/dashed-line-133x2.svg);
   background-repeat: repeat-x;
 }
   
 .divider-thick {
-
+  background-color: transparent;
   background-image: url(../images/dividers/brush-white-thin-large.png);
 
   @include on("retina") {
