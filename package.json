@@ -1,9 +1,9 @@
 {
-  "name": "lmn.jester.theme",
+  "name": "lmn.jester.theme.lmn",
   "version": "0.7.0",
-  "description": "Lost My Name themes",
+  "description": "Lost My Name theme for Jester",
   "author": "barneyfoxuk",
-  "main": "lmn/_base.scss",
+  "main": "src/scss/_jester.theme.lmn.scss",
   "dependencies": {
     "browserify": "^6.2.0"
   },
