@@ -1,3 +1,55 @@
+/*
+ * Layout
+ */
+
+//base
+$font-size-base:            16px !default;
+
+
+// breakpoints 
+$break-lg:                  1024px !default;
+$break-md:                  992px !default;
+$break-sm:                  768px !default;
+$break-xs:                  320px !default;
+
+
+$device-media-expressions: (
+  'lg' '(max-width: 1024px)',
+  'md' '(max-width: 992px)',
+  'sm' '(max-width: 768px)',
+  'xs' '(max-width: 320px)'
+)!default;
+
+$other-media-expressions: (
+  'retina'             '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192ddpx)'
+)!default;
+
+//large images are set as the default, and retina based upon pixel-ratio
+$image-breakpoints: (
+  'medium': 768px,
+  'small': 320px
+)!default;
+
+$media-expressions: if($other-media-expressions, append($device-media-expressions, $other-media-expressions), $device-media-expressions);
+
+//layout
+$xxs:                       rem(3) !default;
+$xs:                        rem(5) !default;
+$sm:                        rem(10) !default;
+$md:                        rem(20) !default;
+$lg:                        rem(40) !default;
+$xl:                        rem(80) !default;
+$xxl:                       rem(120) !default;
+
+
+
+
+
+
+/*
+ * Colours
+ */
+
 //column-rule-style;
 $color-bg-green:            #01b69b;
 $color-bg-blue:             #00aced;
