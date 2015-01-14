@@ -1,0 +1,5 @@
+.gender-switch-option {
+  input:checked + label {
+    background: $color-primary;
+  }
+}

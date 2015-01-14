@@ -1,3 +1,7 @@
+hr {
+  border-color: $color-neutral;
+}
+
 .divider-thin {
   background-color: transparent;
   background-image: url(../images/dividers/dashed-line-133x2.svg);
@@ -13,7 +17,6 @@
     background-size: auto 10px;
   }
 }
-
 
 .divider-texture-top {
   height: 7px;

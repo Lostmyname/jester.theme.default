@@ -39,7 +39,7 @@ $height-form-control: rem(40);
 .input-field {
   max-width: 100%;
   background: white;
-  border: rem(2) solid $color-bg-neutral;
+  border: rem(2) solid $color-neutral;
   border-radius: rem(3);
   outline: none;
   font-family: sans-serif;
@@ -60,17 +60,17 @@ $height-form-control: rem(40);
   }
 
   &:focus {
-    border-color: $color-bg-secondary;
+    border-color: $color-secondary;
   }
   &.is-valid {
-    border-color: $color-bg-primary;
+    border-color: $color-primary;
   }
   &.is-filled.is-invalid {
-    border-color: $color-bg-alert;
+    border-color: $color-alert;
   }
   &.no-highlight,
   .no-highlight & {
-    border-color: $color-bg-neutral;
+    border-color: $color-neutral;
   }
 
 }
