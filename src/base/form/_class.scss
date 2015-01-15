@@ -44,8 +44,7 @@ $height-form-control: rem(40);
   outline: none;
   font-family: sans-serif;
   font-size: em(15);
-
-  @extend .full-width;
+  width: 100%;
 
   &.tiny {
     width: rem(100);
