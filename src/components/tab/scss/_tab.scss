@@ -1,3 +1,11 @@
+.tabs-tab {
+  color: $color-primary;
+}
+
+.tabs-tab.is-active {
+  color: $color-text
+}
+
 .tabs-tab:first-child {
   border-right: 2px dashed #ddd;
 
