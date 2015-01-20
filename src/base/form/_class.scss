@@ -25,13 +25,13 @@ $height-form-control: rem(40);
   text-align: right;
   font-family: monospace;
   letter-spacing: -1px;
-  color: $color-text-link;
+  color: #{map-get($palette, 'text-link')};
   pointer-events: none;
   &.is-negative {
     color: red;
   }
   textarea.no-highlight ~ & {
-    color: $color-text-light;
+    color: #{map-get($palette, 'text-light')};
   }
 }
 
@@ -39,7 +39,7 @@ $height-form-control: rem(40);
 .input-field {
   max-width: 100%;
   background: white;
-  border: rem(2) solid $color-neutral;
+  border: rem(2) solid #{map-get($palette, 'neutral')};
   border-radius: rem(3);
   outline: none;
   font-family: sans-serif;
@@ -59,17 +59,17 @@ $height-form-control: rem(40);
   }
 
   &:focus {
-    border-color: $color-secondary;
+    border-color: #{map-get($palette, 'secondary')};
   }
   &.is-valid {
-    border-color: $color-primary;
+    border-color: #{map-get($palette, 'primary')};
   }
   &.is-filled.is-invalid {
-    border-color: $color-alert;
+    border-color: #{map-get($palette, 'alert')};
   }
   &.no-highlight,
   .no-highlight & {
-    border-color: $color-neutral;
+    border-color: #{map-get($palette, 'neutral')};
   }
 
 }
@@ -155,6 +155,6 @@ $height-form-control: rem(40);
 .error {
   display: block;
   margin-top: $xs;
-  color: $color-text-alert;
+  color: #{map-get($palette, 'alert')};
   font-size: em(14);
 }

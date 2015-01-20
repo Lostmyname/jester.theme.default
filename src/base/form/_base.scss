@@ -65,7 +65,7 @@ input[type="password"],
 textarea,
 select,
 .input {
-  @extend .full-width;
+  width: 100%;
 
   &.tiny {
     width: rem(100);

@@ -9,7 +9,7 @@
 }
 
 .swiper-pagination-switch {
-  background-color: $color-neutral;
+  background-color: #{map-get($palette, 'neutral')};
   width: 10px;
   height: 10px;
   margin: 0 5px;
@@ -20,5 +20,5 @@
 }
 
 .swiper-active-switch {
-  background-color: $color-primary; 
+  background-color: #{map-get($palette, 'primary')}; 
 }

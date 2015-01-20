@@ -1,5 +1,5 @@
 .gender-switch-option {
   input:checked + label {
-    background: $color-primary;
+    background: #{map-get($palette, 'neutral')};
   }
 }

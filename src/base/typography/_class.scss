@@ -1,4 +1,4 @@
-@import "colors";
+
 
 @mixin heading-spacing($x) {
   line-height: rem($x);
@@ -41,7 +41,7 @@
   @extend .base-font;
   @extend .font-sans-serif;
   line-height: 1.5;
-  color: $color-text;
+  color: #{map-get($palette, 'text')};
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -59,7 +59,7 @@
 
 .a {
   text-decoration: none;
-  color: $color-text-link;
+  color: #{map-get($palette, 'text-link')};
   cursor: pointer;
   &:hover {
     text-decoration: underline;
@@ -185,8 +185,8 @@
   text-align: center;
   border-style: dashed;
   border-width: 0px 0px 2px 0px;
-  border-color: $color-bg-gray-brown;
-  color: $color-bg-red;
+  border-color: #{map-get($palette, 'white-pointer')};
+  color: #{map-get($palette, 'vermilion')};
   p + & {
     margin-top: $md * 2;
   }
@@ -205,7 +205,7 @@
   @extend .font-serif;
   font-size: em(24);
   font-weight: normal;
-  color: $color-text-disabled;
+  color: #{map-get($palette, 'text-disabled')};
   p + & {
     margin-top: $md * 2;
   }
@@ -242,7 +242,7 @@
 .figcaption {
   margin: $sm 0 $md;
   font-size: em(14);
-  color: $color-text-light;
+  color: #{map-get($palette, 'text-light')};
   text-align: center;
 }
 
@@ -278,8 +278,8 @@
 .text-indented {
   display: block;
   padding-left: $md + rem(5);
-  border-left: rem(5) solid $international-orange;
-  color: $international-orange;
+  border-left: rem(5) solid #{map-get($palette, 'international-orange')};
+  color: #{map-get($palette, 'international-orange')};
   margin-bottom: $md;
 }
 

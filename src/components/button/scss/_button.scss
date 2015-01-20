@@ -1,31 +1,61 @@
 .button {
-  @include button($color-neutral, $color-text);
+  @include button(#{map-get($palette, 'neutral')}, $color-text);
 }
 
 .button.primary {
-  @include button($color-primary, white);
+  @include button(#{map-get($palette, 'primary')}, white);
 }
 
 .button.secondary {
-  @include button($color-secondary, white);
+  @include button(#{map-get($palette, 'secondary')}, white);
 }
 
 .button.alert {
-  @include button($color-alert, white);
+  @include button(#{map-get($palette, 'alert')}, white);
 }
 
 .button.inverted {
-  @include button(white, $color-text);
+  @include button(white, #{map-get($palette, 'text')});
 }
 
 .button-share-facebook {
-  @extend .bg-facebook !optional;
+  background-color: #{map-get($palette, 'facebook')};
 }
 
 .button-share-twitter {
-  @extend .bg-twitter !optional;
+  background-color: #{map-get($palette, 'twitter')};
 }
 
 .button-share-email {
-  @extend .bg-email !optional;
+  background-color: #{map-get($palette, 'neutral')};
 }
+
+
+
+.button.hover {
+  border: none;
+  background: none;
+  transition: 0.3s;
+  text-transform: none;
+  &:hover {
+    //background: $color-bg-gray-light;
+    //box-shadow: 0 3px darken($color-bg-gray-light, 7);
+  }
+  &:active {
+    //background: $color-bg-yellow;
+    //box-shadow: 0 3px darken($color-bg-yellow, 15);
+    transition: none;
+  }
+}
+
+
+// Disabled state
+.button.disabled,
+.button[disabled],
+.button[disabled]:hover,
+.button.disabled:hover {
+  cursor: not-allowed;
+  //background: $color-bg-neutral;
+  //color: lighten($color-text, 5);
+}
+
