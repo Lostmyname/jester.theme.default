@@ -1,21 +1,23 @@
-$height-form-control: rem(40);
-
-
+input[type="text"],
+input[type="email"],
+input[type="password"],
 .input {
   height: $height-form-control;
   padding: 0 $sm;
 }
 
-.select {
+select {
   height: $height-form-control;
   padding: $sm;
 }
 
-.textarea {
+textarea {
   padding: $sm;
 }
 
-
+[data-count-target] {
+  padding-right: $lg;
+}
 
 .textarea-counter {
   position: absolute;
@@ -25,18 +27,22 @@ $height-form-control: rem(40);
   text-align: right;
   font-family: monospace;
   letter-spacing: -1px;
-  color: #{map-get($palette, 'text-link')};
+  color: map-get($palette, 'text-link');
   pointer-events: none;
   &.is-negative {
     color: red;
   }
   textarea.no-highlight ~ & {
-    color: #{map-get($palette, 'text-light')};
+    color: map-get($palette, 'text-light');
   }
 }
 
-
-.input-field {
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.input {
   max-width: 100%;
   background: white;
   border: rem(2) solid #{map-get($palette, 'neutral')};
@@ -44,20 +50,6 @@ $height-form-control: rem(40);
   outline: none;
   font-family: sans-serif;
   font-size: em(15);
-  width: 100%;
-
-  &.tiny {
-    width: rem(100);
-  }
-
-  &.small {
-    width: rem(140);
-  }
-
-  &.medium {
-    width: rem(180);
-  }
-
   &:focus {
     border-color: #{map-get($palette, 'secondary')};
   }
@@ -65,16 +57,18 @@ $height-form-control: rem(40);
     border-color: #{map-get($palette, 'primary')};
   }
   &.is-filled.is-invalid {
-    border-color: #{map-get($palette, 'alert')};
+    border-color: #{map-get($palette, 'aleft')};
   }
   &.no-highlight,
   .no-highlight & {
     border-color: #{map-get($palette, 'neutral')};
   }
-
 }
 
-.field-validate {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.input {
   &[data-validations] {
     padding-right: rem(36);
     background-image: url(image-path("icons/glyphs/validation-todo-20x20.svg"));
@@ -99,7 +93,10 @@ $height-form-control: rem(40);
   }
 }
 
-.stacked-layout {
+// default stacked form layout
+.control-group label,
+legend,
+.control-label {
   display: inline-block;
   margin-bottom: $sm;
   font-weight: 600;
@@ -114,17 +111,18 @@ $height-form-control: rem(40);
     width: auto;
   }
   label {
+    display: block;
     margin-right: $sm;
   }
 }
 
-.radio {
+input[type="radio"],
+input[type="checkbox"] {
   display: block;
   float: left;
   margin-top: rem(3);
   margin-right: rem(8);
   cursor: pointer;
-
   @include on("sm") {
     margin-top: rem(5);
   }
@@ -138,9 +136,25 @@ $height-form-control: rem(40);
   }
 }
 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select,
+.input {
+  width: 100%;
+  &.tiny {
+    width: rem(100);
+  }
+  &.small {
+    width: rem(140);
+  }
+  &.medium {
+    width: rem(180);
+  }
+}
 
-
-.select {
+select {
   &.smallest {
     width: auto;
   }
