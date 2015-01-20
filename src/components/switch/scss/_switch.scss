@@ -1,5 +1,10 @@
 .gender-switch-option {
+  label {
+    background-color: #{map-get($palette, 'neutral')};
+  }
+
   input:checked + label {
-    background: #{map-get($palette, 'neutral')};
+    background-color: #{map-get($palette, 'primary')};
+    color: white;
   }
 }

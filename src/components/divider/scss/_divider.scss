@@ -1,5 +1,5 @@
 hr {
-  border-color: $color-neutral;
+  border-color: map-get($palette, 'neutral');
 }
 
 .divider-thin {

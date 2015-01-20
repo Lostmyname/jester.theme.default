@@ -1,16 +1,15 @@
 .tabs-tab {
-  color: $color-primary;
+  color: #{map-get($palette, 'text-link')};
 }
 
 .tabs-tab.is-active {
-  color: $color-text
+  color: #{map-get($palette, 'text')};
 }
 
 .tabs-tab:first-child {
-  border-right: 2px dashed #ddd;
+  border-right: 2px dashed #{map-get($palette, 'cloud')};
 
   @media screen and (max-width: $break-md) {
     border-right: none;
   }
-
 }

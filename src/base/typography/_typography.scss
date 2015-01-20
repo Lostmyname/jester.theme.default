@@ -1,0 +1,299 @@
+@mixin heading-spacing($x) {
+  line-height: rem($x);
+  margin-bottom: rem($x / 2);
+}
+
+@mixin font-sans-serif() {
+  font-family: $font-sans-serif;
+}
+
+@mixin font-serif() {
+  font-family: $font-serif;
+}
+
+@mixin base-font-size() {
+  font-size: $font-size-base;
+
+  @include on("sm") {
+    font-size: 14.8px;
+  }
+}
+
+@mixin heading() {
+  @include font-sans-serif();
+  font-weight: bold;
+  margin-top: 0;
+}
+
+
+
+
+
+// Base sizing
+// ===========
+
+// (1) A random number that has been found to
+//     result in more pixel perfect down-sizing
+
+
+html, .html {
+  @include base-font-size();
+}
+
+// Base styling
+// ============
+
+body, .body {
+  @include base-font-size();
+  @include font-sans-serif();
+  line-height: 1.5;
+  color: #{map-get($palette, 'text')};
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article, .article {
+  margin-bottom: $md;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.font-sans-serif {
+  @include font-sans-serif();
+}
+
+.font-serif {
+  @include font-serif();
+}
+
+
+
+// Links
+// =====
+
+a, .a {
+  text-decoration: none;
+  color: #{map-get($palette, 'text-link')};
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Paragraphs
+// ==========
+
+p, .p {
+  @include font-serif();
+  font-size: em(20);
+  height: 1.5;
+  margin-top: 0;
+  margin-bottom: $md;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  &.small {
+    font-size: em(16);
+  }
+}
+
+.font-sans-serif>p, .font-sans-serif>.p {
+  @include font-sans-serif();
+} 
+
+// Editorial list styles
+
+.p-li {
+  margin-bottom: $md;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+em, .italic {
+  font-style: italic;
+}
+
+// Align icons in text
+
+.icon {
+  vertical-align: top;
+}
+
+.text-md {
+  font-size: 20px;
+}
+
+
+// Headings
+// ========
+
+.h1 {
+  @include heading();
+  @include heading-spacing(60);
+  font-size: em(66);
+  &.huge {
+    @include heading-spacing(66);
+    font-size: em(60);
+  }
+  @include on("sm") {
+    font-size: em(36);
+    line-height: rem(40);
+  }
+}
+
+.h2 {
+  @include heading();
+  @include heading-spacing(53);
+  font-size: em(48);
+  @include on("md") {
+    font-size: em(30);
+    line-height: rem(33);
+  }
+}
+
+.h3 {
+  @include heading();
+  @include heading-spacing(40);
+  font-size: em(36);
+}
+
+.h4 {
+  @include heading();
+  @include heading-spacing(33);
+  font-size: em(30);
+}
+
+.h5 {
+  @include heading();
+  @include heading-spacing(26);
+  font-size: em(24);
+}
+
+.h6 {
+  @include heading();
+  @include heading-spacing(22);
+  font-size: em(20);
+}
+
+
+
+// Custom headings
+// ===============
+
+.heading-dashed {
+  margin-bottom: rem(32);
+  padding-bottom: rem(24);
+  text-align: center;
+  border-style: dashed;
+  border-width: 0px 0px 2px 0px;
+  border-color: #{map-get($palette, 'white-pointer')};
+  color: #{map-get($palette, 'vermilion')};
+  p + & {
+    margin-top: $md * 2;
+  }
+}
+
+.heading-brushed {
+  @include heading-spacing(26);
+  @include font-serif();
+  margin-bottom: rem(38);
+  padding-bottom: rem(16);
+  text-align: center;
+  background-image: image-url("dividers/dashed-line-133x2.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-position: bottom;
+  background-size: 130px 2px;
+  font-size: em(24);
+  font-weight: normal;
+  color: #{map-get($palette, 'text-disabled')};
+  p + & {
+    margin-top: $md * 2;
+  }
+}
+
+// Sub heading
+// ===============
+
+.subheading {
+  @include font-sans-serif();
+  font-size: em(20);
+  height: 1.5;
+  margin-top: 0;
+  margin-bottom: $md;
+}
+
+// Quotations
+// ========
+
+blockquote, .blockquote {
+  font-style: italic;
+  font-size: em(30);
+  line-height: rem(38);
+  margin: rem(20) 0;
+  text-align: center;
+}
+
+
+
+// Captions (below images etc.)
+// ========
+
+figure, .figure {
+  margin: 0;
+  text-align: center;
+}
+
+.figcaption {
+  margin: $sm 0 $md;
+  font-size: em(14);
+  color: #{map-get($palette, 'text-light')};
+  text-align: center;
+}
+
+// Formatted text blocks
+// =====================
+
+pre, .pre {
+  @include font-sans-serif; 
+  display: block;
+  width: 100%;
+  white-space: pre-wrap;
+  font-style: italic;
+}
+
+
+// Dropcap
+// =====================
+
+
+.dropcap {
+  @include heading();
+  @include heading-spacing(60);
+  font-size: em(66);
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+  line-height: 0.9;
+}
+
+
+
+// Other custom stuff
+// ==================
+
+.text-indented {
+  display: block;
+  padding-left: $md + rem(5);
+  border-left: rem(5) solid #{map-get($palette, 'international-orange')};
+  color: #{map-get($palette, 'international-orange')};
+  margin-bottom: $md;
+}
+
+
