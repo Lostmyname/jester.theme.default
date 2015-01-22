@@ -9,7 +9,7 @@
 .tabs-tab:first-child {
   border-right: 2px dashed #{map-get($palette, 'cloud')};
 
-  @media screen and (max-width: $break-md) {
+  @include on($md) {
     border-right: none;
   }
 }
