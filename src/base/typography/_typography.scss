@@ -114,6 +114,9 @@ p, .p {
   }
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
 
 em, .italic {
   font-style: italic;
@@ -205,7 +208,7 @@ em, .italic {
   margin-bottom: rem(38);
   padding-bottom: rem(16);
   text-align: center;
-  background-image: image-url("dividers/dashed-line-133x2.svg");
+  background-image: url("images/dividers/dashed-line-133x2.svg");
   background-repeat: no-repeat;
   border: none;
   background-position: bottom;
@@ -233,6 +236,7 @@ em, .italic {
 // ========
 
 blockquote, .blockquote {
+  @include font-serif();
   font-style: italic;
   font-size: em(30);
   line-height: rem(38);
