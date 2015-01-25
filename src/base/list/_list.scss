@@ -1,4 +1,55 @@
-.ol {
+/*
+ * Bulletless list 
+ */
+
+.list-inline {
+  margin: 0;
+  padding: 0;
+
+  > li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1.25rem;
+    vertical-align: top;
+  }
+}
+
+.list-inline-slashed {
+  li {
+    margin-right: 0;
+  }
+
+  li:before {
+    content: "/";
+    margin: 0 12px 0 8px;
+    font-weight: normal;
+    position: relative;
+    top: -3px;
+  }
+
+  li:first-child:before {
+    content: "";
+  }
+}
+
+
+
+/*
+ * Bulletless list 
+ */
+
+.list-bulletless {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+/*
+ * Pretty ordered list
+ */
+
+ol, .ol {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -34,10 +85,4 @@
       margin-left: 44px;
     }
   }
-}
-
-
-
-ol {
-  @extend .ol;
 }
