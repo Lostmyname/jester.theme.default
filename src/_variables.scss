@@ -10,14 +10,14 @@ $font-size-base:            16px !default;
 $break-lg:                  1024px !default;
 $break-md:                  992px !default;
 $break-sm:                  768px !default;
-$break-xs:                  320px !default;
+$break-xs:                  440px !default;
 
 
 $device-media-expressions: (
   'lg' '(max-width: 1024px)',
   'md' '(max-width: 992px)',
   'sm' '(max-width: 768px)',
-  'xs' '(max-width: 320px)'
+  'xs' '(max-width: 440px)'
 )!default;
 
 $other-media-expressions: (
@@ -27,7 +27,7 @@ $other-media-expressions: (
 //large images are set as the default, and retina based upon pixel-ratio
 $image-breakpoints: (
   'medium': 768px,
-  'small': 320px
+  'small': 440px
 )!default;
 
 $media-expressions: if($other-media-expressions, append($device-media-expressions, $other-media-expressions), $device-media-expressions);
