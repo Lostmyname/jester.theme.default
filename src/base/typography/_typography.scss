@@ -128,15 +128,31 @@ em, .italic {
   vertical-align: top;
 }
 
+
+// Sizes
+// =======
+
+
 .text-md {
-  font-size: 20px;
+  font-size: rem(26);
 }
+
+.text-sm {
+  font-size: rem(20);
+}
+
+.text-xs {
+  font-size: rem(16);
+}
+
+
+
 
 
 // Headings
 // ========
 
-.h1 {
+h1, .h1 {
   @include heading();
   @include heading-spacing(60);
   font-size: em(66);
@@ -150,7 +166,7 @@ em, .italic {
   }
 }
 
-.h2 {
+h2, .h2 {
   @include heading();
   @include heading-spacing(53);
   font-size: em(48);
@@ -160,25 +176,25 @@ em, .italic {
   }
 }
 
-.h3 {
+h3, .h3 {
   @include heading();
   @include heading-spacing(40);
   font-size: em(36);
 }
 
-.h4 {
+h4, .h4 {
   @include heading();
   @include heading-spacing(33);
   font-size: em(30);
 }
 
-.h5 {
+h5, .h5 {
   @include heading();
   @include heading-spacing(26);
   font-size: em(24);
 }
 
-.h6 {
+h6, .h6 {
   @include heading();
   @include heading-spacing(22);
   font-size: em(20);
@@ -295,9 +311,15 @@ pre, .pre {
 .text-indented {
   display: block;
   padding-left: $md + rem(5);
-  border-left: rem(5) solid #{map-get($palette, 'international-orange')};
-  color: #{map-get($palette, 'international-orange')};
   margin-bottom: $md;
+}
+
+.text-indented-orange {
+  border-left: rem(5) solid map-get($palette, 'international-orange');
+}
+
+.text-indented-yellow {
+  border-left: rem(5) solid map-get($palette, 'sunglow');
 }
 
 
