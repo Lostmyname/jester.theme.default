@@ -6,7 +6,8 @@
   "main": "src/scss/_jester.theme.lmn.scss",
   "dependencies": {
     "browserify": "^6.3.4",
-    "lmn.tarantula": "^0.5.1"
+    "lmn.tarantula": "^0.5.1",
+    "lmn.jester.helper": "^0.0.1"
   },
   "devDependencies": {
     "browser-sync": "^1.5.1",
@@ -22,8 +23,7 @@
     "jshint-stylish": "^1.0.0",
     "mocha": "^2.0.1",
     "should": "^4.2.0",
-    "vinyl-source-stream": "^1.0.0",
-    "lmn.tarantula": "^0.2.2"
+    "vinyl-source-stream": "^1.0.0"
   },
   "scripts": {
     "test": "open 'http://localhost:3001/demo/tests.html'",
