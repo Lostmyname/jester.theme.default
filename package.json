@@ -7,7 +7,7 @@
   "dependencies": {
     "browserify": "^6.3.4",
     "lmn.tarantula": "^0.5.1",
-    "lmn.jester.helper": "^0.0.1"
+    "lmn.jester.helper": "^0.0.2"
   },
   "devDependencies": {
     "browser-sync": "^1.5.1",
