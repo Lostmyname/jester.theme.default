@@ -3,6 +3,7 @@
 @import "../node_modules/lmn.jester.helper/sass/mixins";
 
 //Base
+@import "base/font/font-face";
 @import "base/typography/typography";
 @import "base/form/form";
 @import "base/form/labels-infield";
