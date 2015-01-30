@@ -9,8 +9,13 @@
   > li {
     display: inline-block;
     list-style: none;
-    margin-right: 1.25rem;
     vertical-align: top;
+  }
+}
+
+.list-inline-spaced {
+  > li {
+    margin-right: 1.25rem;
   }
 }
 
