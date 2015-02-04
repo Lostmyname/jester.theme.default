@@ -1,4 +1,4 @@
-# Jester Themes
+# Jester Default Theme
 
 This is a theme for use with Jester.
 
