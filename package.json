@@ -6,8 +6,8 @@
   "main": "src/scss/_jester.theme.lmn.scss",
   "dependencies": {
     "browserify": "^6.3.4",
-    "lmn.tarantula": "^0.5.1",
-    "lmn.jester.helper": "^0.0.2"
+    "lmn.tarantula": "^0.5.x",
+    "lmn.jester.helper": "^0.0.x"
   },
   "devDependencies": {
     "browser-sync": "^1.5.1",
