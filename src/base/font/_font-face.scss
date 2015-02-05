@@ -1,23 +1,23 @@
-@font-face {
-  font-family: "adelle-sans";
-  src: url("lmn.jester.theme.default/src/base/font/adellesansbasic-regular-webfont.eot");
-  src: url("lmn.jester.theme.default/src/base/font/adellesansbasic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("adellesansbasic-regular-webfont.woff") format("woff"), url("adellesansbasic-regular-webfont.ttf") format("truetype"), url("adellesansbasic-regular-webfont.svg#adelle-sans") format("svg");
-}
+// @font-face {
+//   font-family: "adelle-sans";
+//   src: url("lmn.jester.theme.default/src/base/font/adellesansbasic-regular-webfont.eot");
+//   src: url("lmn.jester.theme.default/src/base/font/adellesansbasic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("adellesansbasic-regular-webfont.woff") format("woff"), url("adellesansbasic-regular-webfont.ttf") format("truetype"), url("adellesansbasic-regular-webfont.svg#adelle-sans") format("svg");
+// }
 
-@font-face {
-  font-family: "adelle-sans";
-  font-weight: bold;
-  src: url("lmn.jester.theme.default/src/base/font/adellesansbasic-bold-webfont.eot");
-  src: url("lmn.jester.theme.default/src/base/font/adellesansbasic-bold-webfont.eot?#iefix") format("embedded-opentype"), url("adellesansbasic-bold-webfont.woff") format("woff"), url("adellesansbasic-bold-webfont.ttf") format("truetype"), url("adellesansbasic-bold-webfont.svg#adelle-sans") format("svg");
-}
+// @font-face {
+//   font-family: "adelle-sans";
+//   font-weight: bold;
+//   src: url("lmn.jester.theme.default/src/base/font/adellesansbasic-bold-webfont.eot");
+//   src: url("lmn.jester.theme.default/src/base/font/adellesansbasic-bold-webfont.eot?#iefix") format("embedded-opentype"), url("adellesansbasic-bold-webfont.woff") format("woff"), url("adellesansbasic-bold-webfont.ttf") format("truetype"), url("adellesansbasic-bold-webfont.svg#adelle-sans") format("svg");
+// }
 
 @font-face {
   font-family: "LMN-icons";
-  src: url('lmn.jester.theme.default/src/base/font/LMN-icons.eot');
-  src: url('lmn.jester.theme.default/src/base/font/LMN-icons.eot?#iefix') format('embedded-opentype'),
-       url('lmn.jester.theme.default/src/base/font/LMN-icons.woff') format('woff'),
-       url('lmn.jester.theme.default/src/base/font/LMN-icons.ttf') format('truetype'),
-       url('lmn.jester.theme.default/src/base/font/LMN-icons.svg#icons') format('svg');
+  src: url('../fonts/LMN-icons.eot');
+  src: url('../fonts/LMN-icons.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/LMN-icons.woff') format('woff'),
+       url('../fonts/LMN-icons.ttf') format('truetype'),
+       url('../fonts/LMN-icons.svg#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }

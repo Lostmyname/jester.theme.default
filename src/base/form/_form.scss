@@ -3,6 +3,7 @@
   padding: 0 $sm;
   border: 2px solid map-get($palette, 'white-pointer');
   border-radius: rem(3);
+  width: 100%;
 }
 
 
@@ -31,4 +32,47 @@ select,
 .select-green {
   background-color: map-get($palette, 'persian-green');
   border: 2px solid map-get($palette, 'white');
+}
+
+
+/*
+ * Textarea field
+ */
+
+textarea,
+.textarea {
+  @include rounded-form-element();
+  height: rem(150);
+}
+
+.select-green {
+  background-color: map-get($palette, 'persian-green');
+  border: 2px solid map-get($palette, 'white');
+}
+
+
+/*
+ * Control group
+ */
+
+.control-group label,
+legend,
+.control-label {
+  display: block;
+}
+
+.control-group-inline {
+  > input[type="radio"] {
+    width: 30px;
+  }
+
+  > input {
+    float: left;
+    display: block;
+  }
+
+  > label {
+    float: left;
+    line-height: rem(37);
+  }
 }

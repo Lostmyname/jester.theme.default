@@ -1,11 +1,13 @@
 {
   "name": "lmn.jester.theme.default",
-  "version": "0.11.0",
+  "version": "0.12.6",
   "description": "Default Lost My Name theme for Jester",
   "author": "barneyfoxuk",
   "main": "src/scss/_jester.theme.lmn.scss",
   "dependencies": {
-    "browserify": "^6.3.4"
+    "browserify": "^6.3.4",
+    "lmn.tarantula": "^0.5.x",
+    "lmn.jester.helper": "^0.0.x"
   },
   "devDependencies": {
     "browser-sync": "^1.5.1",
@@ -21,8 +23,7 @@
     "jshint-stylish": "^1.0.0",
     "mocha": "^2.0.1",
     "should": "^4.2.0",
-    "vinyl-source-stream": "^1.0.0",
-    "lmn.tarantula": "^0.2.2"
+    "vinyl-source-stream": "^1.0.0"
   },
   "scripts": {
     "test": "open 'http://localhost:3001/demo/tests.html'",
