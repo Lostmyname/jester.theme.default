@@ -28,5 +28,13 @@
     "test": "open 'http://localhost:3001/demo/tests.html'",
     "jscs": "jscs ."
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lostmyname/jester.theme.default.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lostmyname/jester.theme.default/issues"
+  },
+  "homepage": "https://github.com/Lostmyname/jester.theme.default"
 }
