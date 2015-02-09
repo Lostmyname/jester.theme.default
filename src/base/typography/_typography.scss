@@ -87,7 +87,7 @@ a, .a {
 
 p, .p {
   @include font-serif();
-  font-size: em(20);
+  font-size: rem(20);
   height: 1.5;
   margin-top: 0;
   margin-bottom: $md;
@@ -97,7 +97,7 @@ p, .p {
   }
   
   &.small {
-    font-size: em(16);
+    font-size: rem(16);
   }
 }
 
@@ -155,13 +155,13 @@ em, .italic {
 h1, .h1 {
   @include heading();
   @include heading-spacing(60);
-  font-size: em(66);
+  font-size: rem(66);
   &.huge {
     @include heading-spacing(66);
-    font-size: em(60);
+    font-size: rem(60);
   }
   @include on("sm") {
-    font-size: em(36);
+    font-size: rem(36);
     line-height: rem(40);
   }
 }
@@ -169,9 +169,9 @@ h1, .h1 {
 h2, .h2 {
   @include heading();
   @include heading-spacing(53);
-  font-size: em(48);
+  font-size: rem(48);
   @include on("md") {
-    font-size: em(30);
+    font-size: rem(30);
     line-height: rem(33);
   }
 }
@@ -179,25 +179,25 @@ h2, .h2 {
 h3, .h3 {
   @include heading();
   @include heading-spacing(40);
-  font-size: em(36);
+  font-size: rem(36);
 }
 
 h4, .h4 {
   @include heading();
   @include heading-spacing(33);
-  font-size: em(30);
+  font-size: rem(30);
 }
 
 h5, .h5 {
   @include heading();
   @include heading-spacing(26);
-  font-size: em(24);
+  font-size: rem(24);
 }
 
 h6, .h6 {
   @include heading();
   @include heading-spacing(22);
-  font-size: em(20);
+  font-size: rem(20);
 }
 
 
@@ -229,7 +229,7 @@ h6, .h6 {
   border: none;
   background-position: bottom;
   background-size: 130px 2px;
-  font-size: em(24);
+  font-size: rem(24);
   font-weight: normal;
   color: #{map-get($palette, 'text-disabled')};
   p + & {
@@ -242,7 +242,7 @@ h6, .h6 {
 
 .subheading {
   @include font-sans-serif();
-  font-size: em(20);
+  font-size: rem(20);
   height: 1.5;
   margin-top: 0;
   margin-bottom: $md;
@@ -254,7 +254,7 @@ h6, .h6 {
 blockquote, .blockquote {
   @include font-serif();
   font-style: italic;
-  font-size: em(30);
+  font-size: rem(30);
   line-height: rem(38);
   margin: rem(20) 0;
   text-align: center;
@@ -272,7 +272,7 @@ figure, .figure {
 
 .figcaption {
   margin: $sm 0 $md;
-  font-size: em(14);
+  font-size: rem(14);
   color: #{map-get($palette, 'text-light')};
   text-align: center;
 }
@@ -296,7 +296,7 @@ pre, .pre {
 .dropcap {
   @include heading();
   @include heading-spacing(60);
-  font-size: em(66);
+  font-size: rem(66);
   float: left;
   margin-right: 10px;
   margin-bottom: 0;
