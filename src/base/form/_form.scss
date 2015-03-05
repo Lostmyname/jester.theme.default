@@ -76,3 +76,17 @@ legend,
     line-height: rem(37);
   }
 }
+
+
+/*
+ * Simple error
+ */
+
+.error {
+  background-color: map-get($palette, 'alert');
+  padding: rem(5) rem(10);
+  border-radius: rem(5);
+  color: white;
+  display: block;
+  margin-top: $xxs;
+}
