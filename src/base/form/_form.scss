@@ -23,8 +23,9 @@ input[type="password"],
   line-height: 40px;
 }
 
+textarea:-ms-input-placeholder,
 input[type="text"]:-ms-input-placeholder {
-  color: #C6C6C6;
+  color: #A9A9A9;
 }
 
 
