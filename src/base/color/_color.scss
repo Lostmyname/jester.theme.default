@@ -1,0 +1,13 @@
+@each $name, $hex in $palette {
+  .color-#{$name} {
+    color: #{$hex};
+  }
+
+  .color-bg-#{$name} {
+    background-color: #{$hex};
+  }
+
+  .color-border-#{$name} {
+    border-color: #{$hex};
+  }
+}

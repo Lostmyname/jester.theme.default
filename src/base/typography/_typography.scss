@@ -118,6 +118,10 @@ p, .p {
   text-transform: uppercase;
 }
 
+.strong {
+  font-weight: bold;
+}
+
 em, .italic {
   font-style: italic;
 }
@@ -136,6 +140,17 @@ em, .italic {
 // Sizes
 // =======
 
+.text-xxl {
+  font-size: rem(65);
+}
+
+.text-xl {
+  font-size: rem(50);
+}
+
+.text-lg {
+  font-size: rem(40);
+}
 
 .text-md {
   font-size: rem(26);
@@ -243,7 +258,7 @@ h6, .h6 {
   margin-bottom: rem(38);
   padding-bottom: rem(16);
   text-align: center;
-  background-image: url("/assets/images/dashed-line-133x2.svg");
+  background-image: image-url("dashed-line-133x2.svg");
   background-repeat: no-repeat;
   border: none;
   background-position: bottom;

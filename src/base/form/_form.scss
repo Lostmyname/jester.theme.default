@@ -19,6 +19,10 @@ input[type="password"],
   @include rounded-form-element();
 }
 
+.ie8 input {
+  line-height: 40px;
+}
+
 
 /*
  * Select field
@@ -32,6 +36,10 @@ select,
 .select-green {
   background-color: map-get($palette, 'persian-green');
   border: 2px solid map-get($palette, 'white');
+}
+
+.ie9 .select {
+  padding-right: 0;
 }
 
 
@@ -48,6 +56,15 @@ textarea,
 .select-green {
   background-color: map-get($palette, 'persian-green');
   border: 2px solid map-get($palette, 'white');
+}
+
+
+/*
+ * Radio button
+ */ 
+
+.radio {
+  border: none;
 }
 
 
@@ -75,4 +92,18 @@ legend,
     float: left;
     line-height: rem(37);
   }
+}
+
+
+/*
+ * Simple error
+ */
+
+.error {
+  background-color: map-get($palette, 'alert');
+  padding: rem(5) rem(10);
+  border-radius: rem(5);
+  color: white;
+  display: block;
+  margin-top: $xxs;
 }
