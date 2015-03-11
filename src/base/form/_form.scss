@@ -56,7 +56,7 @@ select,
 textarea,
 .textarea {
   @include rounded-form-element();
-  height: rem(150);
+  height: rem(200);
 }
 
 .select-green {
