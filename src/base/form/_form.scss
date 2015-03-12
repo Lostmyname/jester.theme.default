@@ -114,3 +114,17 @@ legend,
   display: block;
   margin-top: $xxs;
 }
+
+
+/*
+ * Focus for accesibility
+ */
+
+.button:focus, 
+.order-status-with-timeline 
+.cart-item a[data-key~=edit-button]:focus, 
+.gender-switch-option input:focus + label {
+  box-shadow: 0 0 1px 3px rgba(0, 172, 237, 0.3);
+  outline: none;
+}
+
