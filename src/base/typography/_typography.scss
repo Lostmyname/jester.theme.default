@@ -109,6 +109,61 @@ p, .p {
   @include font-sans-serif();
 } 
 
+
+
+// Headings
+// ========
+
+h1, .h1 {
+  @include heading();
+  @include heading-spacing(60);
+  font-size: rem(66);
+  &.huge {
+    @include heading-spacing(66);
+    font-size: rem(60);
+  }
+  @include on("sm") {
+    font-size: rem(36);
+    line-height: rem(40);
+  }
+}
+
+h2, .h2 {
+  @include heading();
+  @include heading-spacing(53);
+  font-size: rem(48);
+  @include on("md") {
+    font-size: rem(30);
+    line-height: rem(33);
+  }
+}
+
+h3, .h3 {
+  @include heading();
+  @include heading-spacing(40);
+  font-size: rem(36);
+}
+
+h4, .h4 {
+  @include heading();
+  @include heading-spacing(33);
+  font-size: rem(30);
+}
+
+h5, .h5 {
+  @include heading();
+  @include heading-spacing(26);
+  font-size: rem(24);
+}
+
+h6, .h6 {
+  @include heading();
+  @include heading-spacing(22);
+  font-size: rem(20);
+}
+
+
+
 // Editorial list styles
 
 .p-li {
@@ -171,59 +226,6 @@ em, .italic {
 .text-xs {
   font-size: rem(16);
 }
-
-
-// Headings
-// ========
-
-h1, .h1 {
-  @include heading();
-  @include heading-spacing(60);
-  font-size: rem(66);
-  &.huge {
-    @include heading-spacing(66);
-    font-size: rem(60);
-  }
-  @include on("sm") {
-    font-size: rem(36);
-    line-height: rem(40);
-  }
-}
-
-h2, .h2 {
-  @include heading();
-  @include heading-spacing(53);
-  font-size: rem(48);
-  @include on("md") {
-    font-size: rem(30);
-    line-height: rem(33);
-  }
-}
-
-h3, .h3 {
-  @include heading();
-  @include heading-spacing(40);
-  font-size: rem(36);
-}
-
-h4, .h4 {
-  @include heading();
-  @include heading-spacing(33);
-  font-size: rem(30);
-}
-
-h5, .h5 {
-  @include heading();
-  @include heading-spacing(26);
-  font-size: rem(24);
-}
-
-h6, .h6 {
-  @include heading();
-  @include heading-spacing(22);
-  font-size: rem(20);
-}
-
 
 // Line height
 // =======
