@@ -43,6 +43,10 @@ html, .html {
 // Base styling
 // ============
 
+.wf-active body, .body {
+
+}
+
 body, .body {
   @include base-font-size();
   @include font-sans-serif();
@@ -120,6 +124,10 @@ p, .p {
 
 .strong {
   font-weight: bold;
+}
+
+.weight-normal {
+  font-weight: normal;
 }
 
 em, .italic {
