@@ -173,10 +173,6 @@ h6, .h6 {
   }
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
 .strong {
   font-weight: bold;
 }
@@ -225,6 +221,21 @@ em, .italic {
 
 .text-xs {
   font-size: rem(16);
+}
+
+// Text Transform
+// =======
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 // Line height
